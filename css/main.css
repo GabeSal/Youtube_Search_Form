@@ -1,0 +1,62 @@
+body {
+  margin: 2em;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+input[type=text] {
+  width: 1em;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+
+  background-color: white;
+  /*image by SimpleIcon: http://www.flaticon.com/free-icon/magnifier_34202*/
+  background-image: url('../images/magnifier.png');
+  background-position: 1em 50%; 
+  background-repeat: no-repeat;
+
+  padding: 12px 20px 12px 50px;
+  -webkit-transition: all 0.4s ease-out;
+  -moz-transition: all 0.4s ease-out;
+  -o-transition: all 0.4s ease-out;
+  -ms-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+/* When the input field gets focus, change its width to 100% */
+input[type=text]:focus {
+  width: 40%;
+  -webkit-box-shadow: 0 5px 0 3px #ccc inset;
+  -moz-box-shadow: 0 5px 0 3px #ccc inset;
+  box-shadow: 0 5px 3px #ccc inset;
+}
+
+.js-search-results {
+  width: 75%;
+  padding: 0.5em;
+}
+
+.js-result-thumbnail {
+  display: block;
+  margin: 1em;
+  float: left;
+}
+
+.js-title {
+  font-weight: bolder;
+}
+
+.js-result-item {
+  margin-left: 1em;
+}
+
+.clearfix {
+  clear: both;
+}
